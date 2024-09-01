@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.welcom {
+  height: 710px;
+  background-repeat: no-repeat;
+  background: rgb(225, 255, 143);
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.welcom__title {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 196px;
+  padding-bottom: 24px;
+}
+.welcom__descr {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 48px;
+}
+.welcom__button {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  padding: 16px, 28px;
+}
+
+.stars {
+  z-index: 1;
+}
+.stars__right {
+  position: absolute;
+  left: 53.5em;
+  top: -21em;
+  transform: rotate(359.7deg);
+}
+.stars__two {
+  position: absolute;
+  top: 6em;
+  left: 4em;
+}
+.stars__tree {
+  position: absolute;
+  top: 4.2em;
+  left: 9.7em;
+}
+.stars__for {
+  position: absolute;
+  top: 35.5em;
+  left: 63.4em;
+}
+.stars__five {
+  position: absolute;
+  top: 33.5em;
+  left: 59.2em;
+}
+
+.scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.lane {
+  /* background-repeat: no-repeat; */
+  background: rgb(188, 236, 48);
+  background-position: center;
+  background-size: cover;
+  /* z-index: 2; */
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  padding-top: 27px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+}
+.lane__title {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.lane__img {
+  height: 36px;
+  width: 36px;
+}
+
+.first {
+  height: 1470px;
+  background-repeat: no-repeat;
+  background: rgb(32, 32, 39);
+  background-position: center;
+  background-size: cover;
+}
+
+.about {
+  padding-top: 94px;
+  padding-bottom: 72px;
+}
+.about__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.about__descr {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}/*# sourceMappingURL=style.css.map */
