@@ -65,35 +65,41 @@ a {
   background: rgb(32, 32, 39);
   padding: 16px, 28px;
 }
+.welcom__button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
 
 .stars {
   z-index: 1;
 }
 .stars__right {
   position: absolute;
-  left: 53.5em;
-  top: -21em;
-  transform: rotate(359.7deg);
+  left: 59.5%;
+  top: -29.5%;
+  transform: rotate(360deg);
+  z-index: 1;
 }
 .stars__two {
   position: absolute;
-  top: 6em;
-  left: 4em;
+  top: 8.5%;
+  left: 4.5%;
 }
 .stars__tree {
   position: absolute;
-  top: 4.2em;
-  left: 9.7em;
+  top: 6.3%;
+  left: 10.8%;
 }
 .stars__for {
   position: absolute;
-  top: 35.5em;
-  left: 63.4em;
+  top: 50.5%;
+  left: 70.5%;
 }
 .stars__five {
   position: absolute;
-  top: 33.5em;
-  left: 59.2em;
+  top: 48%;
+  left: 65.8%;
 }
 
 .scroll {
@@ -107,13 +113,14 @@ a {
   background: rgb(188, 236, 48);
   background-position: center;
   background-size: cover;
-  /* z-index: 2; */
+  z-index: 2;
   display: flex;
   align-items: center;
   gap: 51px;
   padding-top: 27px;
   padding-left: 15px;
   padding-bottom: 13px;
+  position: relative;
 }
 .lane__title {
   color: rgb(32, 32, 39);
@@ -136,11 +143,37 @@ a {
   background: rgb(32, 32, 39);
   background-position: center;
   background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.first__star {
+  z-index: 1;
+}
+
+.star__eleven {
+  position: absolute;
+  left: 2%;
+  top: 52.5%;
+}
+
+.star__twelve {
+  position: absolute;
+  top: 56%;
+  left: 3%;
+}
+
+.star__one {
+  position: absolute;
+  top: 7.5%;
+  left: 68.3%;
 }
 
 .about {
   padding-top: 94px;
   padding-bottom: 72px;
+  position: relative;
+  z-index: 2;
 }
 .about__title {
   color: rgb(255, 255, 255);
@@ -160,4 +193,74 @@ a {
   letter-spacing: 0px;
   text-align: left;
   padding-top: 24px;
+}
+
+.game {
+  /* display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(15, 1fr); */
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+.game__column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.game__img {
+  border-radius: 30px;
+  width: 378px;
+}
+.game__item {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+  width: 378px;
+  /* height: 473px; */
+  /* grid-row: span 7; */
+}
+.game__item:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.game__inf {
+  padding-top: 32px;
+  padding-bottom: 36px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.game__numbre {
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  padding: 8px 16px 10px 16px;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0px;
+  /* text-align: left; */
+  width: 108px;
+  /* height: 36px; */
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
+  justify-content: space-around;
+}
+.game__title {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 16px;
 }/*# sourceMappingURL=style.css.map */
