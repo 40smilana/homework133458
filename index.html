@@ -16,7 +16,12 @@
             <div class="welcom center">
                 <h1 class="welcom__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
                 <p class="welcom__descr">Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
-                <button class="welcom__button">Поехали!</button>
+
+                <div class="welcom__descr-mobile for__mobile">
+                    <p class="welcom__descr-mob">Тебе предстоит пройти несколько <br> увлекательных игр. Если готов, <br> нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
+                </div>
+
+                <div class="welcom__button center"><a href="#about" class="welcom__button-text">Поехали!</a></div>
             </div>
     
             <div class="stars">
@@ -26,6 +31,15 @@
                 <img class="stars__for" src="image/star_4.svg" alt="">
                 <img class="stars__five" src="image/star_5.svg" alt="">
             </div>
+
+            <div class="stars__mobile for__mobile">
+                <img src="image/mob-star-right.svg" alt="" class="stars__mobile-right">
+                <img src="image/mob-star2.svg" alt="" class="stars__mobile-two">
+                <img src="image/mob-star3.svg" alt="" class="stars__mobile-tree">
+                <img src="image/mob-star4.svg" alt="" class="stars__mobile-for">
+                <img src="image/mob-star5.svg" alt="" class="stars__mobile-five">
+            </div>
+            
     
             <div class="lane scroll">
                 <h2 class="lane__title">Викторина</h2>
@@ -54,7 +68,7 @@
         </div>
 
         <div class="about center">
-            <h1 class="about__title">Об играх</h1>
+            <h1 id="about" class="about__title">Об играх</h1>
             <p class="about__descr">В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в них может поиграть каждый. <br> Все игры доступны для пользования.</p>
         </div>
 

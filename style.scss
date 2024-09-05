@@ -21,7 +21,11 @@ a {
 
 ::-webkit-scrollbar {
     width: 0;
-  }
+}
+
+.for__mobile {
+    display: none;
+}
 
 .welcom {
     height: 710px;
@@ -55,6 +59,10 @@ a {
         padding-bottom: 48px;
     }
 
+    /* &__descr-mobile {
+        display: none;
+    } */
+
     &__button {
         color: rgb(255, 255, 255);
         font-family: Montserrat;
@@ -70,13 +78,21 @@ a {
         border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
         background: rgb(32, 32, 39);
-        padding: 16px, 28px;
+        padding: 16px;
     }
 
     &__button:hover {
         background: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         transition: 0.5s;
+    }
+
+    .welcom__button-text {
+        color: rgb(255, 255, 255);
+    }
+
+    .welcom__button-text:hover {
+        color: rgb(0, 0, 0);
     }
 }
 
@@ -291,3 +307,5 @@ a {
         padding-top: 16px;
     }
 }
+
+@import 'mobile';
