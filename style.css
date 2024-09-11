@@ -31,9 +31,6 @@ a {
   background-position: center;
   background-size: cover;
   z-index: 2;
-  /* &__descr-mobile {
-      display: none;
-  } */
 }
 .welcom__title {
   color: rgb(32, 32, 39);
@@ -122,17 +119,16 @@ a {
 }
 
 .lane {
-  /* background-repeat: no-repeat; */
   background: rgb(188, 236, 48);
   background-position: center;
   background-size: cover;
   z-index: 2;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 51px;
-  padding-top: 27px;
   padding-left: 15px;
-  padding-bottom: 13px;
+  height: 90px;
   position: relative;
 }
 .lane__title {
@@ -144,14 +140,15 @@ a {
   letter-spacing: 4%;
   text-align: left;
   text-transform: uppercase;
+  padding-top: 27px;
 }
 .lane__img {
   height: 36px;
   width: 36px;
+  padding-top: 27px;
 }
 
 .first {
-  height: 1470px;
   background-repeat: no-repeat;
   background: rgb(32, 32, 39);
   background-position: center;
@@ -210,9 +207,6 @@ a {
 }
 
 .game {
-  /* display: grid;
-  gap: 32px;
-  grid-template-columns: repeat(15, 1fr); */
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -234,8 +228,6 @@ a {
   background: rgb(255, 255, 255);
   border-radius: 30px;
   width: 378px;
-  /* height: 473px; */
-  /* grid-row: span 7; */
 }
 .game__item:hover {
   transform: scale(1.05);
@@ -260,11 +252,8 @@ a {
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0px;
-  /* text-align: left; */
   width: 108px;
-  /* height: 36px; */
   display: flex;
-  /* align-content: center; */
   align-items: center;
   justify-content: space-around;
 }
@@ -277,6 +266,133 @@ a {
   letter-spacing: 0px;
   text-align: left;
   padding-top: 16px;
+}
+
+.second {
+  background: rgb(32, 32, 39);
+  position: relative;
+}
+
+.top-star-big {
+  position: absolute;
+  top: 3.8%;
+  left: 89%;
+  transform: rotate(6deg);
+}
+
+.top-star-little {
+  position: absolute;
+  top: 2.8%;
+  left: 86%;
+  transform: rotate(6deg);
+}
+
+.bottom-star-big {
+  position: absolute;
+  bottom: 2%;
+  left: 89%;
+}
+
+.bottom-star-little {
+  position: absolute;
+  bottom: 1.5%;
+  left: 84.5%;
+}
+
+.mini__title {
+  padding-top: 48px;
+  padding-bottom: 72px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 144px;
+}
+.play__link {
+  display: flex;
+  flex-direction: row;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+.play__link_revers {
+  display: flex;
+  flex-direction: row-reverse;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+.play__pack {
+  padding-top: 48px;
+  padding-left: 48px;
+  width: 601px;
+}
+.play__title {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+.play__descr {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 36px;
+}
+.play__button {
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  padding: 16px 28px 16px 28px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.play__button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+  transition: 0.5s;
+}
+
+.footer {
+  height: 150px;
+  background: rgb(189, 237, 53);
+}
+.footer__title {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 61px;
 }
 
 @media (max-width: 767px) {
@@ -367,6 +483,8 @@ a {
     padding-left: 24px;
     padding-right: 24px;
     gap: 27px;
+    height: 51px;
+    z-index: 1;
   }
   .lane__title {
     color: rgb(32, 32, 39);
@@ -377,12 +495,17 @@ a {
     letter-spacing: 4%;
     text-align: left;
     text-transform: uppercase;
+    padding-top: 16px;
   }
   .lane__img {
     width: 19px;
     height: 19px;
+    padding-top: 16px;
   }
   .first {
     display: none;
+  }
+  .second {
+    z-index: 2;
   }
 }/*# sourceMappingURL=style.css.map */

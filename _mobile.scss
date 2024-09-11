@@ -102,6 +102,8 @@
         padding-left: 24px;
         padding-right: 24px;
         gap: 27px;
+        height: 51px;
+        z-index: 1;
 
         &__title {
             color: rgb(32, 32, 39);
@@ -112,15 +114,21 @@
             letter-spacing: 4%;
             text-align: left;
             text-transform: uppercase;
+            padding-top: 16px;
         }
 
         &__img {
             width: 19px;
             height: 19px;
+            padding-top: 16px;
         }
     }
 
     .first {
         display: none;
+    }
+
+    .second {
+        z-index: 2;
     }
 }
