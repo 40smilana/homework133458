@@ -1,0 +1,134 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .welcom {
+        height: 649px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding-top: 147px;
+        }
+
+        &__descr {
+            display: none;
+        }
+
+        &__descr-mobile {
+            display: block;
+            padding-bottom: 36px;
+        }
+
+        &__descr-mob {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &__button {
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+
+            width: 285px;
+            height: 55px;
+        }
+    }
+
+    .stars {
+        display: none;
+    }
+
+    .stars__mobile {
+        display: block;
+
+        &-right {
+            position: absolute;
+            z-index: 1;
+            top: 0%;
+            left: 57.5%;
+        }
+
+        &-two {
+            position: absolute;
+            z-index: 1;
+            top: 16%;
+            left: 10.5%;
+        }
+
+        &-tree {
+            position: absolute;
+            z-index: 1;
+            top: 10.5%;
+            left: 24.5%;
+        }
+
+        &-for {
+            position: absolute;
+            z-index: 1;
+            top: 95.5%;
+            left: 81%;
+        }
+
+        &-five {
+            position: absolute;
+            z-index: 1;
+            top: 92%;
+            left: 73%;
+        }
+
+    }
+
+    .lane {
+        padding-left: 24px;
+        padding-right: 24px;
+        gap: 27px;
+        height: 51px;
+        z-index: 1;
+
+        &__title {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 4%;
+            text-align: left;
+            text-transform: uppercase;
+            padding-top: 16px;
+        }
+
+        &__img {
+            width: 19px;
+            height: 19px;
+            padding-top: 16px;
+        }
+    }
+
+    .first {
+        display: none;
+    }
+
+    .second {
+        z-index: 2;
+    }
+}
