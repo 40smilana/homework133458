@@ -19,9 +19,13 @@ a {
     text-decoration: none;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0;
-}
+} */
+
+/* .header {
+    overflow: hidden;
+} */
 
 .for__mobile {
     display: none;
@@ -128,11 +132,11 @@ a {
     }
 }
 
-.scroll {
+/* .scroll {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-}
+} */
 
 .lane {
     background: rgb(188, 236, 48);
