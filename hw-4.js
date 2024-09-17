@@ -25,19 +25,21 @@ for (const key in obj) {
     console.log(`${obj[key]}`);
 }
 
-for (let n = 1000; n <= 1000 ; n = n / 2) {
+let n = 1000;
+let num = 0;
+while (n <= 1000) {
+    n = n/2
     if (n < 50) {
-        break;
-    }
-    console.log(n / 2);
-}
-
-let firstFriday = 5
-console.log("Сегодня пятница " + firstFriday + "-е число. Необходимо подготовить отчет.");
-      for (let Friday = 5; Friday <= 31; Friday = Friday + 7) {
-    if (Friday >= 31 - 7) {
         break
     }
-    console.log("Сегодня пятница " + [Friday + 7] + "-е число. Необходимо подготовить отчет.");
+    num++;
+    console.log(n);
+}
+console.log(num);
+
+let firstFriday = 5;
+for (let friday = firstFriday; friday <= 31; friday += 7) {
+    console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
+    
 }
               
