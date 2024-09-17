@@ -321,6 +321,7 @@ a {
 .play__link {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background: #FFFFFF;
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
@@ -330,6 +331,7 @@ a {
 .play__link_revers {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
   background: #FFFFFF;
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
@@ -339,7 +341,6 @@ a {
 .play__pack {
   padding-top: 48px;
   padding-left: 48px;
-  width: 601px;
 }
 .play__title {
   color: rgb(32, 32, 39);
@@ -454,7 +455,7 @@ a {
     position: absolute;
     z-index: 1;
     top: 0%;
-    left: 57.5%;
+    right: 0%;
   }
   .stars__mobile-two {
     position: absolute;
@@ -572,7 +573,7 @@ a {
     margin-bottom: 32px;
   }
   .play__img {
-    width: 343px;
+    /* width: 343px; */
     /* height: 487.98px; */
   }
   .footer {

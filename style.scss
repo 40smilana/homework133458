@@ -354,6 +354,7 @@ a {
     &__link {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         background: #FFFFFF;
         box-sizing: border-box;
         border: 1px solid rgb(0, 0, 0);
@@ -364,6 +365,7 @@ a {
     &__link_revers {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: flex-end;
         background: #FFFFFF;
         box-sizing: border-box;
         border: 1px solid rgb(0, 0, 0);
@@ -374,7 +376,6 @@ a {
     &__pack {
         padding-top: 48px;
         padding-left: 48px;
-        width: 601px;
     }
 
     &__title {
