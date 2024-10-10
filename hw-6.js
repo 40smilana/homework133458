@@ -40,7 +40,7 @@ console.log(del);
 
 
 //7
-guess = [9, 8, 7, 6, 5];
+const guess = [9, 8, 7, 6, 5];
 let userGuess = Number(prompt("Угадай число: "));
 if (guess.includes(userGuess)) {
     alert('Угадал');
