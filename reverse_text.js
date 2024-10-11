@@ -1,6 +1,6 @@
 function reverseText() {
-    let userText = prompt("Введи текст через пробел, я переверну его и выведу результат");
-    let splitUserText = userText.split(" ");
-    let reversUserText = splitUserText.reverse();
-    alert(reversUserText.join(" "));
+    let userWord = prompt("Введи слово, я переверну его и выведу результат");
+    let arrayWord = userWord.split('');
+    let reverseWord = arrayWord.reverse();
+    alert(reverseWord.join(''));
 }

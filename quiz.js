@@ -33,7 +33,14 @@ function askUser(quizItem) {
         alert("Не угадал, балл останется у меня. Верный ответ:" + " " + quizItem.options[quizItem.correctAnswer - 1]);
     }
 }
-askUser(quiz[0]);
+
+function startQuiz() {
+    for (let i = 0; i < quiz.length; i++) {
+        askUser(quiz[i]);
+    }
+    alert(`Твои баллы: ${counter}`);
+}
+/* askUser(quiz[0]);
 askUser(quiz[1]);
 askUser(quiz[2]);
-alert(`Твои баллы: ${counter}`);
+alert(`Твои баллы: ${counter}`); */
