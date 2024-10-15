@@ -8,11 +8,11 @@ function simpleMath() {
   const userReply = Number(prompt(`Привет! Реши задачу: ${randomTask}`));
   const rightReply = eval(randomTask);
 
-if (operation === '/' && numTwo < 0) {
+  if (operation === '/' && numTwo < 0) {
   return randomTask();
-} else if (userReply === rightReply) {
+  } else if (userReply === rightReply) {
   alert(`Верно`);
-} else {
+  } else {
   alert(`Неверно, ответ ${rightReply}`);
-}
+  }
 }
