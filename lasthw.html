@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Lorem, ipsum dolor.</h1>
+    <button id="btn" class="button">Скрыть</button>
+
+    <p class="descr">Lorem ipsum dolor sit amet.</p>
+    <button class="btn">Изменить цвет</button>
+
+    <h1 class="top">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <button class="btn_top">Изменить текст</button>
+
+    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, nesciunt?</p>
+    <p class="d">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, nesciunt?</p>
+    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, nesciunt?</p>
+    <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, nesciunt?</p>
+    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, nesciunt?</p>
+
+    <button class="butt">Добавить элемент</button>
+
+    <button class="butto">Удалить элемент</button>
+
+    <div class="content"></div>
+    <script>
+        //1
+            const buttonElement = document.getElementById('btn');
+            const titleElement = document.querySelector('.title');
+
+            buttonElement.addEventListener('click', function(){
+                //titleElement.textContent.toggle('.title');
+                if (titleElement.style.display != "block") { 
+                    titleElement.style.display = "block";
+                    }
+                    else titleElement.style.display = "none";
+            })
+
+        //2
+            const descrEl = document.querySelector('.descr');
+            const buttonEl = document.querySelector('.btn');
+
+            buttonEl.addEventListener('click', function () {
+                descrEl.style.color = 'blue';
+            });
+
+        //3
+            const topEl = document.querySelector('.top');
+            const btn_topEl = document.querySelector('.btn_top');
+
+            btn_topEl.addEventListener('click', function () {
+                topEl.textContent = 'Привет, мир!';
+            });
+
+        //4
+            const descriptionEl = document.querySelectorAll('.description');
+            descriptionEl.forEach((e, i) => {
+                e.textContent = 'Измененный текст';
+            });
+
+        //5
+            const descrElement = document.querySelectorAll('.description');
+            descrElement.forEach((el, item) => {
+                el.textContent = 'Новый текст';
+            })
+
+        //6
+            const contentEl = document.querySelector('.content')
+            const buttonElem = document.querySelector('.butt')
+            buttonElem.addEventListener('click', () => {
+                const newElement = document.createElement('p');
+                newElement.textContent = 'Новый абзац';
+                contentEl.appendChild(newElement);
+            });
+
+        //7
+            const descripEl = document.querySelectorAll('.description');
+            const btnElem = document.querySelector('.butto');
+            btnElem.addEventListener('click', () => {
+                if (descripEl.length > 0) {
+                descripEl[0].remove();
+                }
+            })
+    </script>
+</body>
+</html>
