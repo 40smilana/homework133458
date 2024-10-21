@@ -542,7 +542,12 @@
         </div>
     </div>
 
-    <div class="second">
+    <div class="second" id="secondBlock">
+        <style>
+            #secondBlock {
+                transition: background-color 0.5s ease;
+            }
+        </style>
 
         <div class="mini center">
             <h1 class="mini__title">Мини-игры</h1>
@@ -592,7 +597,7 @@
                     <div class="play__pack">
                         <h2 class="play__title">Генератор <br> случайных <br> цветов</h2>
                         <p class="play__descr">Игра, в которой при клике на кнопку <br> фон страницы меняется на случайный.</p>
-                        <button class="play__button">Играть!</button>
+                        <button class="play__button" id="changeColor">Играть!</button>
                     </div>
                     <img src="image/play-six.png" alt="" class="play__img">
                 </a>
@@ -611,5 +616,6 @@
     <script src="reverse_text.js"></script>
     <script src="quiz.js"></script>
     <script src="rock_paper_scissors.js"></script>
+    <script src="color_generator.js"></script>
 </body>
 </html>
