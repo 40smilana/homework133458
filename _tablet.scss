@@ -1,0 +1,155 @@
+@media (max-width: 1200px) {
+
+    .game {
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__item {
+            width: 330px;
+        }
+
+        &__img {
+            width: 330px;
+            height: 274px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1054px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px; 
+    }
+
+    .header {
+        background: url(image/stars_mobile_right.svg) 125% -150%,
+        url(image/stars_mobile_left.svg) 10% 10%;
+        background-color: rgb(225, 255, 143);
+        background-repeat: no-repeat;
+    }
+
+    .first {
+        display: none;
+    }
+
+    .game {
+
+        &__item {
+            width: 330px;
+        }
+
+        &__img {
+            width: 330px;
+            height: 274px;
+        }
+    }
+
+    .mini {
+        &__title {
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-bottom: 48px;
+        }
+    }
+
+    .play {
+        padding-bottom: 48px;
+        gap: 32px;
+
+        &__link {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__link_revers {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__pack {
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+
+        &__title {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-bottom: 16px;
+            width: 284px;
+        }
+
+        &__descr {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-bottom: 32px;
+        }
+
+        &__button {
+            width: 295px;
+            height: 65px;
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    .second {
+        background-image: none;
+    }
+
+    .stars {
+        display: none;
+    }
+
+    .footer {
+        height: 100px;
+
+        &__title {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding-top: 40px;
+        }
+    }
+
+    .footer {
+        height: 150px;
+
+        &__title {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding-top: 60px;
+        }
+    }
+}

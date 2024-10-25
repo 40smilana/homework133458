@@ -1,12 +1,20 @@
 function guessNumbre() {
-    let randomNumber = Math.floor(Math.random() * 100) + 1;
-    let guess = Number(prompt("Попробуй угадать число от 1 до 100"));
-    while (guess != randomNumber) {
-      if (guess < randomNumber) {
-        guess = Number(prompt(`Мало, попробуй ещё раз`));
-      } else if (guess > randomNumber) {
-        guess = Number(prompt(`Много, попробуй ещё раз`));
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let guess = 0;
+    
+    do {
+      guess = prompt("Попробуй угадать число от 1 до 100");
+      if (!/^\d+$/.test(guess)) {
+          alert("Введи число");
+          continue;
       }
-    }
-    alert(`Ты угадал! Это было число ${randomNumber}!`);
-  }
+      guess = Number(guess);
+      if (guess < randomNumber) {
+          alert("Мало, попробуй ещё раз");
+      } else if (guess > randomNumber) {
+          alert("Много, попробуй ещё раз");
+      }
+  } while (guess !== randomNumber);
+
+  alert(`Ты угадал! Это было число ${randomNumber}!`);
+}

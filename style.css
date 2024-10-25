@@ -16,14 +16,14 @@ a {
   text-decoration: none;
 }
 
-.for__mobile {
-  display: none;
-}
-
 .header {
   background: url(image/welcome_stars_right.svg) 121% 100%, url(image/welcom_stars_right_bottom.svg) 66% 78%, url(image/welcom_stars_left_top.svg) 19% 10%;
   background-color: rgb(225, 255, 143);
   background-repeat: no-repeat;
+}
+
+.for__mobile {
+  display: none;
 }
 
 .welcom {
@@ -80,14 +80,8 @@ a {
 
 .lane {
   background: rgb(188, 236, 48);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 51px;
-  padding-left: 15px;
-  height: 90px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .lane__title {
   color: rgb(32, 32, 39);
@@ -98,14 +92,34 @@ a {
   letter-spacing: 4%;
   text-align: left;
   text-transform: uppercase;
-  padding-top: 27px;
+  white-space: nowrap;
 }
 .lane__img {
   height: 36px;
   width: 36px;
-  padding-top: 27px;
 }
 
+.lane__content {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 51px;
+  animation: moveLine 15s linear infinite running;
+  animation-direction: reverse;
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
 .first {
   background-repeat: no-repeat;
   background-color: rgb(32, 32, 39);
@@ -235,6 +249,9 @@ a {
   background: rgb(255, 255, 255);
   border-radius: 30px;
 }
+.play__link:hover {
+  cursor: default;
+}
 .play__link_revers {
   display: flex;
   flex-direction: row-reverse;
@@ -244,6 +261,9 @@ a {
   border: 1px solid rgb(0, 0, 0);
   background: rgb(255, 255, 255);
   border-radius: 30px;
+}
+.play__link_revers:hover {
+  cursor: default;
 }
 .play__pack {
   padding-top: 48px;
@@ -287,6 +307,7 @@ a {
   background: rgb(255, 255, 255);
   color: rgb(32, 32, 39);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .footer {
@@ -308,6 +329,11 @@ a {
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .header {
+    background: url(image/stars_mobile_right.svg) 260% 420%, url(image/stars_mobile_left.svg) 13% 10%;
+    background-color: rgb(225, 255, 143);
+    background-repeat: no-repeat;
   }
   .welcom {
     height: 649px;
@@ -355,46 +381,6 @@ a {
   .stars {
     display: none;
   }
-  .stars__mobile {
-    display: block;
-  }
-  .stars__mobile-right {
-    position: absolute;
-    z-index: 1;
-    top: 0%;
-    right: 0%;
-  }
-  .stars__mobile-two {
-    position: absolute;
-    z-index: 1;
-    top: 16%;
-    left: 10.5%;
-  }
-  .stars__mobile-tree {
-    position: absolute;
-    z-index: 1;
-    top: 10.5%;
-    left: 24.5%;
-  }
-  .stars__mobile-for {
-    position: absolute;
-    z-index: 1;
-    top: 95.5%;
-    left: 81%;
-  }
-  .stars__mobile-five {
-    position: absolute;
-    z-index: 1;
-    top: 92%;
-    left: 73%;
-  }
-  .lane {
-    padding-left: 24px;
-    padding-right: 24px;
-    gap: 27px;
-    height: 51px;
-    z-index: 1;
-  }
   .lane__title {
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -404,12 +390,20 @@ a {
     letter-spacing: 4%;
     text-align: left;
     text-transform: uppercase;
-    padding-top: 16px;
   }
   .lane__img {
     width: 19px;
     height: 19px;
+  }
+  .lane__content {
     padding-top: 16px;
+    padding-bottom: 16px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 51px;
   }
   .first {
     display: none;
@@ -443,8 +437,7 @@ a {
     flex-direction: column-reverse;
   }
   .play__pack {
-    padding-left: 32px;
-    padding-top: 32px;
+    padding: 32px;
   }
   .play__title {
     color: rgb(32, 32, 39);
@@ -468,8 +461,7 @@ a {
     padding-bottom: 32px;
   }
   .play__button {
-    width: 285px;
-    height: 55px;
+    width: 100%;
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 16px;
@@ -491,5 +483,129 @@ a {
     letter-spacing: 0px;
     text-align: center;
     padding-top: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .game__title {
+    font-size: 24px;
+  }
+  .game__item {
+    width: 330px;
+  }
+  .game__img {
+    width: 330px;
+    height: 274px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1054px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header {
+    background: url(image/stars_mobile_right.svg) 125% -150%, url(image/stars_mobile_left.svg) 10% 10%;
+    background-color: rgb(225, 255, 143);
+    background-repeat: no-repeat;
+  }
+  .first {
+    display: none;
+  }
+  .game__item {
+    width: 330px;
+  }
+  .game__img {
+    width: 330px;
+    height: 274px;
+  }
+  .mini__title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 48px;
+  }
+  .play {
+    padding-bottom: 48px;
+    gap: 32px;
+  }
+  .play__link {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .play__link_revers {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .play__pack {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  .play__title {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 16px;
+    width: 284px;
+  }
+  .play__descr {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 32px;
+  }
+  .play__button {
+    width: 295px;
+    height: 65px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .second {
+    background-image: none;
+  }
+  .stars {
+    display: none;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__title {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .footer {
+    height: 150px;
+  }
+  .footer__title {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 60px;
   }
 }/*# sourceMappingURL=style.css.map */

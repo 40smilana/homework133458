@@ -7,6 +7,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    //overflow-x: hidden
 }
   
 .center {
@@ -18,16 +19,16 @@ a {
     text-decoration: none;
 }
 
-.for__mobile {
-    display: none;
-}
-
 .header {
     background: url(image/welcome_stars_right.svg) 121% 100%,
     url(image/welcom_stars_right_bottom.svg) 66% 78%,
     url(image/welcom_stars_left_top.svg) 19% 10%;
     background-color: rgb(225, 255, 143);
     background-repeat: no-repeat;
+}
+
+.for__mobile {
+    display: none;
 }
 
 .welcom {
@@ -91,14 +92,8 @@ a {
 
 .lane {
     background: rgb(188, 236, 48);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 51px;
-    padding-left: 15px;
-    height: 90px;
+    max-width: 100%;
+    overflow-x: hidden;
 
     &__title {
         color: rgb(32, 32, 39);
@@ -109,14 +104,38 @@ a {
         letter-spacing: 4%;
         text-align: left;
         text-transform: uppercase;
-        padding-top: 27px;
+        white-space: nowrap;
     }
 
     &__img {
         height: 36px;
         width: 36px;
-        padding-top: 27px;
     }
+}
+
+.lane__content {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 51px;
+    animation: moveLine 15s linear infinite running;
+    animation-direction: reverse;
+    
+}
+
+@keyframes moveLine {
+    0% {
+        transform: translate(100%);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+
 }
 
 .first {
@@ -261,6 +280,10 @@ a {
         border-radius: 30px;
     }
 
+    &__link:hover {
+        cursor: default;        
+    }
+
     &__link_revers {
         display: flex;
         flex-direction: row-reverse;
@@ -270,6 +293,10 @@ a {
         border: 1px solid rgb(0, 0, 0);
         background: rgb(255, 255, 255);
         border-radius: 30px;
+    }
+
+    &__link_revers:hover {
+        cursor: default;
     }
 
     &__pack {
@@ -319,6 +346,7 @@ a {
         background: rgb(255, 255, 255);
         color: rgb(32, 32, 39);
         transition: 0.5s;
+        cursor: pointer;
     }
 }
 
@@ -339,3 +367,4 @@ a {
 }
 
 @import 'mobile';
+@import 'tablet';
