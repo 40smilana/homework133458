@@ -65,16 +65,17 @@
         &__link {
             display: flex;
             flex-direction: column-reverse;
+            border-radius: 50px;
         }
 
         &__link_revers {
             display: flex;
             flex-direction: column-reverse;
+            border-radius: 50px;
         }
 
         &__pack {
-            padding-left: 40px;
-            padding-top: 40px;
+            padding: 40px 40px 40px 40px;
         }
 
         &__title {

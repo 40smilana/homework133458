@@ -51,6 +51,8 @@ a {
   padding-bottom: 48px;
 }
 .welcom__button {
+  display: inline-block;
+  text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 24px;
@@ -59,7 +61,6 @@ a {
   letter-spacing: 0%;
   text-align: center;
   width: 247px;
-  height: 66px;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
@@ -534,14 +535,15 @@ a {
   .play__link {
     display: flex;
     flex-direction: column-reverse;
+    border-radius: 50px;
   }
   .play__link_revers {
     display: flex;
     flex-direction: column-reverse;
+    border-radius: 50px;
   }
   .play__pack {
-    padding-left: 40px;
-    padding-top: 40px;
+    padding: 40px 40px 40px 40px;
   }
   .play__title {
     color: rgb(32, 32, 39);

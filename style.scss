@@ -58,6 +58,8 @@ a {
     }
 
     &__button {
+        display: inline-block;
+        text-decoration: none;
         color: rgb(255, 255, 255);
         font-family: Montserrat;
         font-size: 24px;
@@ -65,9 +67,7 @@ a {
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
-
         width: 247px;
-        height: 66px;
         box-sizing: border-box;
         border: 1px solid rgb(32, 32, 39);
         border-radius: 60px;
