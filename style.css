@@ -81,7 +81,6 @@ a {
 
 .lane {
   background: rgb(188, 236, 48);
-  max-width: 100%;
   overflow-x: hidden;
 }
 .lane__title {
@@ -103,21 +102,23 @@ a {
 .lane__content {
   padding-top: 27px;
   padding-bottom: 27px;
+  padding-right: 49px;
+  padding-left: 49px;
+  width: 6244px;
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 51px;
-  animation: moveLine 15s linear infinite running;
-  animation-direction: reverse;
+  animation: moveLine 10s linear infinite running;
 }
 
 @keyframes moveLine {
-  0% {
-    transform: translate(100%);
+  from {
+    transform: translate(0%);
   }
-  100% {
+  to {
     transform: translate(-100%);
   }
 }
@@ -397,6 +398,7 @@ a {
     height: 19px;
   }
   .lane__content {
+    width: 3340px;
     padding-top: 16px;
     padding-bottom: 16px;
     background-position: center;
