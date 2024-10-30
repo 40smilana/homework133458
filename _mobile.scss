@@ -4,6 +4,13 @@
         padding-right: 16px;
     }
 
+    .header {
+        background: url(image/stars_mobile_right.svg) 260% 420%,
+        url(image/stars_mobile_left.svg) 13% 10%;
+        background-color: rgb(225, 255, 143);
+        background-repeat: no-repeat;
+    }
+
     .welcom {
         height: 649px;
         display: flex;
@@ -58,52 +65,7 @@
         display: none;
     }
 
-    .stars__mobile {
-        display: block;
-
-        &-right {
-            position: absolute;
-            z-index: 1;
-            top: 0%;
-            right: 0%;
-        }
-
-        &-two {
-            position: absolute;
-            z-index: 1;
-            top: 16%;
-            left: 10.5%;
-        }
-
-        &-tree {
-            position: absolute;
-            z-index: 1;
-            top: 10.5%;
-            left: 24.5%;
-        }
-
-        &-for {
-            position: absolute;
-            z-index: 1;
-            top: 95.5%;
-            left: 81%;
-        }
-
-        &-five {
-            position: absolute;
-            z-index: 1;
-            top: 92%;
-            left: 73%;
-        }
-
-    }
-
     .lane {
-        padding-left: 24px;
-        padding-right: 24px;
-        gap: 27px;
-        height: 51px;
-        z-index: 1;
 
         &__title {
             color: rgb(32, 32, 39);
@@ -114,14 +76,26 @@
             letter-spacing: 4%;
             text-align: left;
             text-transform: uppercase;
-            padding-top: 16px;
         }
 
         &__img {
             width: 19px;
             height: 19px;
-            padding-top: 16px;
         }
+    }
+
+    .lane__content {
+        width: 3340px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 51px;
+        
+        
     }
 
     .first {
@@ -163,8 +137,7 @@
         }
 
         &__pack {
-            padding-left: 32px;
-            padding-top: 32px;
+            padding: 32px;
         }
 
         &__title {
@@ -191,9 +164,7 @@
         }
 
         &__button {
-            width: 285px;
-            height: 55px;
-
+            width: 100%;
             color: rgb(255, 255, 255);
             font-family: Montserrat;
             font-size: 16px;
@@ -204,10 +175,6 @@
             margin-bottom: 32px;
         }
 
-        &__img {
-            /* width: 343px; */
-            /* height: 487.98px; */
-        }
     }
 
     .footer {
