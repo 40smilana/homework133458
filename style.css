@@ -111,7 +111,7 @@ a {
   align-items: center;
   justify-content: space-around;
   gap: 51px;
-  animation: moveLine 10s linear infinite running;
+  animation: moveLine 20s linear infinite running;
 }
 
 @keyframes moveLine {
@@ -562,7 +562,7 @@ a {
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 125%;
     letter-spacing: 0px;
     text-align: left;
     padding-bottom: 32px;
